@@ -1,0 +1,10 @@
+# Managed by puppet - do not modify
+
+[INCLUDES]
+<%= @includes.sort.map{|k,v| "#{k} = #{v}"}.join("\n") %>
+
+[Definition]
+<%= @definition.sort.map{|k,v| "#{k} = #{v}"}.join("\n") %>
+
+[Init]
+<%= @init.sort.map{|k,v| "#{k} = #{v}"}.join("\n") %>

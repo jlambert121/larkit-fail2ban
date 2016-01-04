@@ -1,0 +1,5 @@
+# Managed by puppet - do not modify
+
+[<%= @name %>]
+enabled = <%= @enable %>
+<%= @config.sort.map{|k,v| "#{k} = #{v}"}.join("\n") %>
